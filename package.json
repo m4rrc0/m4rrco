@@ -1,0 +1,25 @@
+{
+  "name": "m4rrco",
+  "version": "0.0.1",
+  "description": "The personal blog of Marc Coët using ssg (by @swyx)",
+  "main": "index.js",
+  "scripts": {
+    "start": "ssg dev",
+    "serve": "serve __sapper__/export",
+    "postinstall": "patch-package",
+    "build": "ssg export",
+    "nobuild": "ssg export --build false",
+    "prettify": "prettier --write src/**/*",
+    "screenshot": "node screenshot-plugin/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "m4rrc0 <hello@m4rr.co>",
+  "license": "MIT",
+  "dependencies": {
+    "ssg": "0.0.59"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0"
+  }
+}
